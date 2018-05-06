@@ -1,0 +1,289 @@
+/* CSS Document */
+.head-div-position {
+	float: left;
+    /*background-color:blue;*/
+}
+
+.text-defind {
+	border-radius: 4px 0px 0px 4px;
+	width: 70%;
+	float: left;
+	margin-left: 50px;
+    /*background-color:black;*/
+}
+
+.ad {
+	width: 800px;
+	height: 400px;
+	float: left;
+}
+
+.div-img-size {
+	height: 400px;
+}
+
+.page-size {
+	width: 1180px;
+	height: 1000px;
+	margin: auto;
+}
+
+.nav-left-size {
+	width: 190px;
+	height: 400px;
+	float: left;
+}
+
+a{
+	color: black;
+	cursor: pointer;
+}
+
+
+.icon-distance {
+	margin-left: 50px;
+}
+
+.nav-left-dl dd{
+	border-right: 1px #8A8A8A solid;
+	padding: 0px 10px;
+	display: inline;
+}
+
+.nav-left-dl dd a:hover{
+	color:green;
+}
+
+.nav-hide {
+	float: left;
+	width:800px;
+	height:400px;
+	border: 1px red solid;
+	display: none;
+}
+
+.nav-hide-dl dd{
+	border-right: 1px #8A8A8A solid;
+	padding: 0px 10px;
+	display: inline;
+}
+
+.watchword div div{
+	width: 236px;
+	height: 100px;
+	float: left;
+	text-align: center;
+}
+
+
+
+.waistchword {
+	width: 1180px;
+	height: 100px;
+	border: 1px red solid;
+	position: relative;
+/*	display: block;*/
+}
+
+.watchword {
+	
+}
+
+.nav-right-size {
+	width: 190px;
+	height: 400px;
+	float: left;
+}
+
+.nav-style {
+	width: 1180px;
+	height: 400px;
+	box-shadow: 0px 2px 5px black;
+}
+
+.tab-content-price {
+	width: 80%;
+	height: 30px;
+	border: 1px red solid;
+	background-color: #FF2F00;
+	color: white;border-radius: 0px 0px 15px 15px;margin: auto;
+}
+
+.tab-morning-content {
+	width: 200px;
+	height: 310px;
+	float: left;
+	margin:3px;
+	
+}
+
+
+
+
+.tab-content-name {
+	border-bottom: 2px red solid;
+	width: 100%;
+	text-align: center;
+}
+
+.tab-content-order {
+	height: 310px;
+	margin-top: -271px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	width: 200px;
+	border-bottom: none;
+	
+}
+
+.tab-content-order:hover {
+	cursor: pointer;
+	border-bottom: 3em #FF2F00 solid;
+	box-shadow: 1px 1px 5px black;
+}
+
+.tab-content-p {
+	text-align: center;
+	font-size: 1.2em;
+	transition: 1s all ease;
+	margin-top: 280px;
+}
+
+.ad-1-style {
+	border: 1em red solid;
+	width: 1180px;
+	height: 450px;
+	/*background-color:#5C5C5C;*/
+	border-radius: 40px 40px 0px 0px;
+}
+
+.tab-define-position {
+	margin-left: 20px;
+}
+
+.li-a-h3 {
+	display: inline;
+	color:black;
+}
+
+.li-a-i-style {
+	color: black;
+	width: 70px;
+}
+
+.tab-content-define-style {
+	margin-left: 60px;
+	margin-top: 20px;
+	width: 1030px; 
+	height: 300px;
+}
+
+.special-fruit {
+	background-image: url(../images/52444d0fdea7ea3e9cb79540cbfb0e5200.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 20px;
+	margin-top: 10px;
+    /*border: 1px red solid;*/
+}
+
+.special-fruit-title {
+	height: 80px; 
+/*	border: 1px blue solid;*/
+}
+
+.sf-title-left-img {
+	float: left;
+	transform: rotate(-90deg);
+	margin-left: 400px;
+}
+
+.sp-title-p {
+	float: left;
+}
+
+.sp-tab-define-position {
+	margin-left: 390px;
+}
+
+.sp-commodity {
+	float: left;
+	width: 200px;
+	height: 300px;
+}
+
+.sp-commodity:hover {
+	box-shadow: 1px 1px 2px black;
+	transition: 1s all ease;
+} 
+
+
+.sp-commodity:hover img{
+	box-shadow: 0px 0px 2px black;
+}
+
+.sp-tab-content-style {
+	width: 1180px;
+	height: 400px; 
+	border-radius: 200px 0px 0px 200px;
+	background-image:url(../images/59c0bd84Nc2fda13b.jpg!q80.webp);
+	background-repeat: no-repeat;
+	background-size: cover; 
+	filter: blur(4px);
+}
+
+
+.sp-tab-content-shade {
+	width: 1180px;
+	height: 400px; 
+	border-radius: 200px 0px 0px 200px;
+	background-color: black;
+	opacity: 0.5;
+	margin-top: -400px;
+}
+
+.sp-tab-content {
+	margin-top: 0px;
+	height: 400px;
+	width: 1180px;
+	margin-top: -400px;
+	position: absolute;
+}
+
+.giftBox {
+	width: 1180px;
+	height: 400px;
+}
+
+.sp-left-img {
+	height: 200px;
+	float: left;
+	margin-top: 200px;
+}
+
+.sp-right-fruit {
+	width: 600px;
+	height: 300px;
+	margin-top: 50px;
+	margin-left: 530px;
+	border-radius: 0px 0px 100px 0px;
+	position: absolute;
+	background-color:#EFEFEF;
+}
+
+
+
+.sp-commodity-img {
+	margin-left: 25px;
+	margin-top: 25px;
+}
+
+.btn-defind {
+	border-radius: 0px 4px 4px 0px;
+	width: 100px;
+	height: 34px;
+}
+
+.nav-hide-dl {
+	margin-left: 20px;
+}

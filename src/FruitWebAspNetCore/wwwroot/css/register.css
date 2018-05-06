@@ -1,0 +1,16 @@
+/* CSS Document */
+
+
+.logo-position {
+	float: left;
+}
+
+.wel-posititon {
+	float: left;
+}
+
+.registerBtn {
+	margin-left: 100px;
+	background-color:#FF0004;
+	color: white;
+}

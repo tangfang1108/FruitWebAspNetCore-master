@@ -1,0 +1,678 @@
+﻿@{
+    ViewData["Title"] = "果蔬销售-首页";
+    Layout = "/Views/Shared/_MainLayout.cshtml";
+}
+<!--		导航栏-->
+<nav class="nav-style">
+    <!--			左侧导航栏-->
+    <div class="nav-left-size">
+        <div>
+            <div style="float: left;margin-top: 10px;">
+                <img width="35" src="images/fruit_icon.png" alt="pic">
+            </div>
+            <!--					新鲜水果-->
+            <dl id="nav-left-dl-1" class="nav-left-dl" style="margin-left:40px;height: 180px;">
+                <dt style="color: black;margin-top: 15px;">
+                    <a>新鲜水果</a>
+                    <a><i class="glyphicon glyphicon-chevron-right icon-distance"></i></a>
+                </dt>
+                <dd style="padding-left: 0px;"><a>梨</a></dd>
+                <dd><a>苹果</a></dd>
+                <dd><a>香蕉</a></dd>
+                <dd><a>榴莲</a></dd>
+                <dd><a>草莓</a></dd>
+                <dd><a>柚子</a></dd>
+                <dd><a>车厘子</a></dd>
+                <dd><a>奇异果</a></dd>
+                <dd><a>百香果</a></dd>
+                <dd><a>丑苹果</a></dd>
+                <dd><a>黄心西瓜</a></dd>
+                <dd style="border-right: none;"><a>红心猕猴桃</a></dd>
+            </dl>
+        </div>
+        <!--				分割线-->
+        <hr>
+        <div>
+            <div style="float: left;margin-top: 10px;">
+                <img width="35" src="images/vegitable——iicon.png" alt="pic">
+            </div>
+            <!--					果蔬蛋品-->
+            <dl id="nav-left-dl-2" class="nav-left-dl" style="margin-left:40px;height: 180px;">
+                <dt style="color: black;margin-top: 15px;">
+                    <a>果蔬蛋品</a>
+                    <a><i class="glyphicon glyphicon-chevron-right icon-distance"></i></a>
+                </dt>
+                <dd style="padding-left: 0px;"><a>梨</a></dd>
+                <dd><a>生菜</a></dd>
+                <dd><a>菜心</a></dd>
+                <dd><a>山药</a></dd>
+                <dd><a>萝卜</a></dd>
+                <dd><a>香菇</a></dd>
+                <dd><a>松茸</a></dd>
+                <dd><a>玉米</a></dd>
+                <dd><a>黄瓜</a></dd>
+                <dd><a>鸡蛋</a></dd>
+                <dd><a>鸭蛋</a></dd>
+                <dd style="border-right: none;"><a>松花蛋/皮蛋</a></dd>
+            </dl>
+        </div>
+
+    </div>
+    <!--			隐藏的导航栏-->
+    <div>
+        <!--				隐藏的新鲜水果导航栏-->
+        <div id="nav-hide-1" class="nav-hide">
+            <hr style="margin-top: 0px;">
+            <!--					热销水果-->
+            <dl class="nav-hide-dl">
+                <dt style="display: inline;"><a>热销水果</a></dt>
+                <dd class="glyphicon glyphicon-chevron-right"></dd>
+                <dd><a>苹果</a></dd>
+                <dd><a>梨</a></dd>
+                <dd><a>奇异果/猕猴桃</a></dd>
+                <dd><a>蓝莓</a></dd>
+                <dd><a>葡萄/提子</a></dd>
+                <dd><a>橙子</a></dd>
+                <dd><a>山楂</a></dd>
+                <dd><a>柠檬</a></dd>
+                <dd><a>百香果</a></dd>
+                <dd><a>人参果</a></dd>
+            </dl>
+            <hr>
+            <!--					时令水果-->
+            <dl class="nav-hide-dl">
+                <dt style="display: inline;"><a>时令水果</a></dt>
+                <dd class="glyphicon glyphicon-chevron-right"></dd>
+                <dd><a>草莓</a></dd>
+                <dd><a>车厘子/樱桃</a></dd>
+                <dd><a>柚子</a></dd>
+                <dd><a>橘柑</a></dd>
+                <dd><a>枇杷</a></dd>
+                <dd><a>石榴</a></dd>
+                <dd><a>冬枣</a></dd>
+                <dd><a>西瓜</a></dd>
+                <dd><a>香瓜</a></dd>
+                <dd><a>哈密瓜</a></dd>
+            </dl>
+            <hr>
+            <!--					热带水果-->
+            <dl class="nav-hide-dl">
+                <dt style="display: inline;"><a>热带水果</a></dt>
+                <dd class="glyphicon glyphicon-chevron-right"></dd>
+                <dd><a>香蕉</a></dd>
+                <dd><a>香蕉</a></dd>
+                <dd><a>芒果</a></dd>
+                <dd><a>百香果</a></dd>
+                <dd><a>山竹</a></dd>
+                <dd><a>木瓜</a></dd>
+                <dd><a>释迦</a></dd>
+                <dd><a>荔枝</a></dd>
+                <dd><a>龙眼</a></dd>
+                <dd><a>牛油果</a></dd>
+            </dl>
+            <hr>
+            <!--					地标水果-->
+            <dl class="nav-hide-dl">
+                <dt style="display: inline;"><a>地标水果</a></dt>
+                <dd class="glyphicon glyphicon-chevron-right"></dd>
+                <dd><a>洛川苹果</a></dd>
+                <dd><a>阿克苏苹果</a></dd>
+                <dd><a>烟台红富士</a></dd>
+                <dd><a>新疆哈密瓜</a></dd>
+                <dd><a>蒙自石榴</a></dd>
+                <dd><a>沾化冬枣</a></dd>
+                <dd><a>西峡猕猴桃</a></dd>
+                <dd><a>美国车厘子</a></dd>
+                <dd><a>台湾凤梨</a></dd>
+                <dd><a>东北姑娘果</a></dd>
+            </dl>
+            <hr>
+            <!--					新果奇特-->
+            <dl class="nav-hide-dl">
+                <dt style="display: inline;"><a>新果奇特</a></dt>
+                <dd class="glyphicon glyphicon-chevron-right"></dd>
+                <dd><a>红心猕猴桃</a></dd>
+                <dd><a>丑苹果</a></dd>
+                <dd><a>黄心西瓜</a></dd>
+                <dd><a>蛇皮果</a></dd>
+                <dd><a>鲜核桃</a></dd>
+                <dd><a>软籽石榴</a></dd>
+                <dd><a>秋月梨</a></dd>
+            </dl>
+        </div>
+        <!--				隐藏的蔬菜蛋品导航栏-->
+        <div id="nav-hide-2" class="nav-hide">
+            <hr style="margin-top: 0px;">
+            <!--					叶菜类-->
+            <dl class="nav-hide-dl">
+                <dt style="display: inline;"><a>叶菜类</a></dt>
+                <dd class="glyphicon glyphicon-chevron-right"></dd>
+                <dd><a>生菜</a></dd>
+                <dd><a>菜心</a></dd>
+                <dd><a>西兰花</a></dd>
+                <dd><a>菠菜</a></dd>
+                <dd><a>上海青/油菜</a></dd>
+                <dd><a>芥蓝</a></dd>
+                <dd><a>白菜</a></dd>
+                <dd><a>甘蓝/卷心菜</a></dd>
+                <dd><a>芹菜</a></dd>
+                <dd><a>韭菜</a></dd>
+                <dd><a>更多</a></dd>
+            </dl>
+            <hr>
+            <!--					根茎类-->
+            <dl class="nav-hide-dl">
+                <dt style="display: inline;"><a>根茎类</a></dt>
+                <dd class="glyphicon glyphicon-chevron-right"></dd>
+                <dd><a>山药</a></dd>
+                <dd><a>萝卜</a></dd>
+                <dd><a>地瓜/红薯</a></dd>
+                <dd><a>土豆/洋芋</a></dd>
+                <dd><a>芋头</a></dd>
+                <dd><a>莲藕</a></dd>
+                <dd><a>百合</a></dd>
+                <dd><a>芦笋</a></dd>
+                <dd><a>更多</a></dd>
+            </dl>
+            <hr>
+            <!--					鲜菇菌-->
+            <dl class="nav-hide-dl">
+                <dt style="display: inline;"><a>鲜菇菌</a></dt>
+                <dd class="glyphicon glyphicon-chevron-right"></dd>
+                <dd><a>香菇</a></dd>
+                <dd><a>松茸</a></dd>
+                <dd><a>鸡枞菌</a></dd>
+                <dd><a>牛肝菌</a></dd>
+                <dd><a>杏鲍菇</a></dd>
+                <dd><a>木耳/银耳</a></dd>
+                <dd><a>黑松露菌</a></dd>
+                <dd><a>平菇</a></dd>
+                <dd><a>更多</a></dd>
+            </dl>
+            <hr>
+            <!--					瓜果类-->
+            <dl class="nav-hide-dl">
+                <dt style="display: inline;"><a>瓜果类</a></dt>
+                <dd class="glyphicon glyphicon-chevron-right"></dd>
+                <dd><a>玉米</a></dd>
+                <dd><a>黄瓜</a></dd>
+                <dd><a>西红柿</a></dd>
+                <dd><a>南瓜</a></dd>
+                <dd><a>茄子</a></dd>
+                <dd><a>四季豆</a></dd>
+                <dd><a>苦瓜</a></dd>
+                <dd><a>豇豆</a></dd>
+                <dd><a>更多</a></dd>
+            </dl>
+            <hr>
+            <!--					蛋品类-->
+            <dl class="nav-hide-dl">
+                <dt style="display: inline;"><a>蛋品类</a></dt>
+                <dd class="glyphicon glyphicon-chevron-right"></dd>
+                <dd><a>鸡蛋</a></dd>
+                <dd><a>鸭蛋</a></dd>
+                <dd><a>鸽子蛋</a></dd>
+                <dd><a>鹅蛋</a></dd>
+                <dd><a>鹌鹑蛋</a></dd>
+                <dd><a>松花蛋/皮蛋</a></dd>
+                <dd><a>喜蛋</a></dd>
+                <dd><a>咸蛋</a></dd>
+                <dd><a>咸蛋黄</a></dd>
+                <dd><a>更多</a></dd>
+            </dl>
+        </div>
+    </div>
+
+    <!--			广告栏-->
+    <div id="ad" class="ad">
+        <!--			图片轮播器-->
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="actpxve"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner div-img-size">
+                <div class="item active">
+                    <img class="" src="images/5aa8d39aN674e65fe.jpg" alt="picture">
+                </div>
+                <div class="item">
+                    <img src="images/5ab3828fNedfab306.jpg" alt="picture">
+                </div>
+                <div class="item">
+                    <img src="images/5aa8d39aN674e65fe.jpg" alt="picture">
+                </div>
+            </div>
+            <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!--			右侧导航栏-->
+    <div class="nav-right-size" style="border: 1px blue solid;">
+        <dl>
+            <dt></dt>
+            <dd></dd>
+        </dl>
+    </div>
+</nav>
+<!--		标语/口号-->
+<div class="watchword" style="margin-top: 0px;">
+    <div style="width: 1180px;height: 100px; margin-top: 30px;">
+        <div>
+            <i class="fas fa-check-square fa-3x" style="float: left;"></i>
+            <h4>食品安全</h4>
+            <dl>
+                <dd>精选生产&nbsp;严格质检</dd>
+            </dl>
+        </div>
+        <div>
+            <i class="fas fa-snowflake fa-3x" style="float: left;"></i>
+            <h4>全程冷链</h4>
+            <dl>
+                <dd>自营物流&nbsp;安全可控</dd>
+            </dl>
+        </div>
+        <div>
+            <i class="fas fa-leaf fa-3x" style="float: left;"></i>
+            <h4>鲜活天然</h4>
+            <dl>
+                <dd>绿色生态&nbsp;层层精选</dd>
+            </dl>
+        </div>
+        <div>
+            <i class="fas fa-globe fa-3x" style="float: left;"></i>
+            <h4>产地直采</h4>
+            <dl>
+                <dd>限定产量&nbsp;质量保证</dd>
+            </dl>
+        </div>
+        <div>
+            <i class="fas fa-dollar-sign fa-3x" style="float: left;"></i>
+            <h4>无忧售后</h4>
+            <dl>
+                <dd>优鲜赔&nbsp;售后通道</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<!--		食材预告栏-->
+<div id="ad-1" class="ad-1-style">
+    <!--			标签页标题-->
+    <ul id="myTab" class="nav nav-tabs tab-define-position">
+        <li class="active">
+            <a href="#morning" data-toggle="tab">
+                <i class="fab fa-mixcloud fa-3x li-a-i-style"></i><h3 class="li-a-h3">早市抢鲜</h3>
+            </a>
+        </li>
+        <li>
+            <a href="#noon" data-toggle="tab">
+                <i class="far fa-sun fa-3x li-a-i-style"></i><h3 class="li-a-h3">午市抢鲜</h3>
+            </a>
+        </li>
+        <li>
+            <a href="#night" data-toggle="tab">
+                <i class="far fa-moon fa-3x li-a-i-style"></i><h3 class="li-a-h3">晚市抢鲜</h3>
+            </a>
+        </li>
+    </ul>
+    <div id="tabContent" class="tab-content">
+        <!--				早市抢鲜-->
+        <div class="tab-pane fade in active tab-content-define-style" id="morning">
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/59e5be49N6de07153.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/59e5be49N6de07153.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/59e5be49N6de07153.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/59e5be49N6de07153.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/59e5be49N6de07153.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+        </div>
+        <!--				午市抢鲜-->
+        <div class="tab-pane fade tab-content-define-style" id="noon">
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/58d368c5N1e4e8f15.jpg" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/59e5be49N6de07153.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/59e5be49N6de07153.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/59e5be49N6de07153.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/59e5be49N6de07153.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+        </div>
+        <!--				晚市抢鲜-->
+        <div class="tab-pane fade tab-content-define-style" id="night">
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/5a7a4707N3e30de37.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/59e5be49N6de07153.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/59e5be49N6de07153.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/59e5be49N6de07153.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+            <div class="tab-morning-content">
+                <!--							价格栏-->
+                <div class="tab-content-price">
+                    <h4 style="text-align: center;">$12</h4>
+                </div>
+                <!--							图片-->
+                <img width="200" src="images/59e5be49N6de07153.jpg!q80.webp" alt="fruit">
+                <!--							食材介绍-->
+                <div class="tab-content-name">
+                    <h4>金蛇果</h4>
+                </div>
+                <!--							隐藏的立即预购按钮-->
+                <div class="tab-content-order">
+                    <p class="tab-content-p">立即预购</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--		身临食感-->
+<div class="special-fruit">
+    <!--			身临食感标题-->
+    <div class="special-fruit-title">
+        <img class="sf-title-left-img" width="50" src="~/images/52444d0fdea7ea3e9cb79540cbfb0e52.jpg" alt="picture">
+        <h2 class="sp-title-p">身&nbsp;/&nbsp;临&nbsp;/&nbsp;食&nbsp;/&nbsp;感</h2>
+        <img style="float: left;" width="50" src="~/images/52444d0fdea7ea3e9cb79540cbfb0e52.jpg" alt="picture">
+    </div>
+    <!--			身临食感详细标题-->
+    <div class="sp-tab-title" style="width: 1180px;height: 70px;">
+        <!--				身临食感标签页标题-->
+        <ul id="mySpTab" class="nav nav-tabs sp-tab-define-position">
+            <li class="active">
+                <a href="#gitfBox" data-toggle="tab">
+                    <i class="fab fa-mixcloud fa-3x li-a-i-style"></i><h3 class="li-a-h3">精选礼盒</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#importedfood" data-toggle="tab">
+                    <i class="far fa-sun fa-3x li-a-i-style"></i><h3 class="li-a-h3">进口美食</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <!--				食材介绍-->
+        <div class="sp-tab-content-style"></div>
+        <!--				灰色透明遮罩-->
+        <div class="sp-tab-content-shade"></div>
+        <!--				身临食感标签页内容-->
+        <div class="tab-content sp-tab-content">
+            <!--					精品礼盒标签页-->
+            <div class="tab-pane fade in active giftBox" id="gitfBox">
+                <!--					左侧水果图片-->
+                <div class="sp-left-img">
+                    <img src="images/599e7853N7bbe1ce0.png" alt="pic">
+                </div>
+                <!--				右侧水果栏-->
+                <div class="sp-right-fruit">
+                    <div class="sp-commodity">
+                        <img class="sp-commodity-img" src="~/images/5a793ff8N8e271efb.jpg" alt="pic">
+                        <div style="text-align: center;">
+                            <p>江西名牌 杨氏精品脐橙</p>
+                            <p>5kg装 钻石果 水果橙子</p>
+                            <p>价格：￥20</p>
+                        </div>
+                    </div>
+                    <div class="sp-commodity">
+                        <img class="sp-commodity-img" src="~/images/5a793ff8N8e271efb.jpg" alt="pic">
+                        <div style="text-align: center;">
+                            <p>江西名牌 杨氏精品脐橙</p>
+                            <p>5kg装 钻石果 水果橙子</p>
+                            <p>价格：￥20</p>
+                        </div>
+                    </div>
+                    <div class="sp-commodity" style="border-radius: 0px 0px 100px 0px;">
+                        <img class="sp-commodity-img" src="~/images/5a793ff8N8e271efb.jpg" alt="pic">
+                        <div style="text-align: center;">
+                            <p>江西名牌 杨氏精品脐橙</p>
+                            <p>5kg装 钻石果 水果橙子</p>
+                            <p>价格：￥20</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--					进口水果标签页-->
+            <div class="tab-pane fade in" id="importedfood" style="width: 1180px;height: 400px;">
+                <!--					左侧水果图片-->
+                <div class="sp-left-img">
+                    <img src="~/images/5a4094d3Nc8168196.png" alt="pic">
+                </div>
+                <!--				右侧水果栏-->
+                <div class="sp-right-fruit">
+                    <div class="sp-commodity">
+                        <img class="sp-commodity-img" src="~/images/59f14e33N7063ee48.jpg" alt="pic">
+                        <div style="text-align: center;">
+                            <p>江西名牌 杨氏精品脐橙</p>
+                            <p>5kg装 钻石果 水果橙子</p>
+                            <p>价格：￥20</p>
+                        </div>
+                    </div>
+                    <div class="sp-commodity">
+                        <img class="sp-commodity-img" src="~/images/5a793ff8N8e271efb.jpg" alt="pic">
+                        <div style="text-align: center;">
+                            <p>江西名牌 杨氏精品脐橙</p>
+                            <p>5kg装 钻石果 水果橙子</p>
+                            <p>价格：￥20</p>
+                        </div>
+                    </div>
+                    <div class="sp-commodity" style="border-radius: 0px 0px 100px 0px;">
+                        <img class="sp-commodity-img" src="~/images/5a793ff8N8e271efb.jpg" alt="pic">
+                        <div style="text-align: center;">
+                            <p>江西名牌 杨氏精品脐橙</p>
+                            <p>5kg装 钻石果 水果橙子</p>
+                            <p>价格：￥20</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

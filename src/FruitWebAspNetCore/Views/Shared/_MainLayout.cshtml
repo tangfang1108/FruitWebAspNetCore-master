@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="~/lib/fontawesome-free-5.0.9/web-fonts-with-css/css/fontawesome-all.css" />
+
+</head>
+<body>
+    <div class="page-size">
+        <!--		头部-->
+        <header class="page-header" style="height: 75px;">
+            <div class="head-div-position">
+                <a asp-controller="Home" asp-action="Index"><img width="300" style="margin-top:-30px;" src="images/fruitFontbig.png" alt="logo"></a>
+            </div>
+            <div class="head-div-position" style="width:600px;">
+                <input style="float:left;" type="text" class="form-control text-defind" id="search" placeholder="请输入商品名称">
+                <button class="btn btn-default btn-defind" value="search">搜索</button>
+            </div>
+            <div class="head-div-position" style="margin-left: 100px;">
+                <button type="button" class="btn btn-default" style="width: 150px;height: 34px;">
+                    <div style="">
+                        <i class="fas fa-shopping-cart" style="float: left;font-size: 1.4em"></i>
+                        <p style="font-size: 1.4em;">&nbsp;我的购物车</p>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <!--        导航栏-->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fulled">
+                <!--导航体-->
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a asp-controller="Home" asp-action="Index">网站首页</a></li>
+                        <li><a asp-controller="Home" asp-action="ProductsDescription">季节鲜货</a></li>
+                        <li><a asp-controller="Home" asp-action="ProductsDescription">优惠活动</a></li>
+                        <li><a asp-controller="Home" asp-action="ProductsDescription">惊喜礼品</a></li>
+                        <li><a asp-controller="Home" asp-action="ProductsDescription">全球进口</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                特色分类
+                                <b class="caret"></b><!--↓箭头-->
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a asp-controller="Home" asp-action="BrowsingPage">蔬菜</a></li>
+                                <li><a asp-controller="Home" asp-action="BrowsingPage">水果</a></li>
+                                <li><a asp-controller="Home" asp-action="BrowsingPage">有机蔬菜</a></li>
+                                <li><a asp-controller="Home" asp-action="BrowsingPage">有机水果</a></li>
+                                <li class="divider"></li><!--分割线-->
+                                <li><a href="Home/BrowsingPage">其他</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" data-toggle="modal" data-target="#about">关于我们</a></li>
+                    </ul>
+                    <div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="Register">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    注册
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="Login">
+                                    <span class="glyphicon glyphicon-log-in"></span>
+                                    登录
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        @RenderBody();
+        <!--		标语/口号-->
+        <div class="watchword" style="margin-top: 0px;">
+            <div style="width: 1180px;height: 100px; margin-top: 30px;">
+                <div>
+                    <i class="fas fa-check-square fa-3x" style="float: left;"></i>
+                    <h4>食品安全</h4>
+                    <dl>
+                        <dd>精选生产&nbsp;严格质检</dd>
+                    </dl>
+                </div>
+                <div>
+                    <i class="fas fa-snowflake fa-3x" style="float: left;"></i>
+                    <h4>全程冷链</h4>
+                    <dl>
+                        <dd>自营物流&nbsp;安全可控</dd>
+                    </dl>
+                </div>
+                <div>
+                    <i class="fas fa-leaf fa-3x" style="float: left;"></i>
+                    <h4>鲜活天然</h4>
+                    <dl>
+                        <dd>绿色生态&nbsp;层层精选</dd>
+                    </dl>
+                </div>
+                <div>
+                    <i class="fas fa-globe fa-3x" style="float: left;"></i>
+                    <h4>产地直采</h4>
+                    <dl>
+                        <dd>限定产量&nbsp;质量保证</dd>
+                    </dl>
+                </div>
+                <div>
+                    <i class="fas fa-dollar-sign fa-3x" style="float: left;"></i>
+                    <h4>无忧售后</h4>
+                    <dl>
+                        <dd>优鲜赔&nbsp;售后通道</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <hr style="margin-top: 0px;">
+        <!--		页脚-->
+        <footer>
+            <div style="text-align: center;">
+                <div style="float: left;width: 295px;">
+                    <h4>购物指南</h4>
+                    <dl>
+                        <dd><a>购物流程</a></dd>
+                        <dd><a>支付方式</a></dd>
+                        <dd><a>售后规则</a></dd>
+                    </dl>
+                </div>
+                <div style="float: left;width: 295px;">
+                    <h4>配送方式</h4>
+                    <dl>
+                        <dd><a>配送运费</a></dd>
+                        <dd><a>配送范围</a></dd>
+                        <dd><a>配送时间</a></dd>
+                    </dl>
+                </div>
+                <div style="float: left;width: 295px;">
+                    <h4>商家服务</h4>
+                    <dl>
+                        <dd><a>平台规则</a></dd>
+                        <dd><a>商家入驻</a></dd>
+                        <dd><a>联系我们</a></dd>
+                    </dl>
+                </div>
+                <div style="float: left;width: 295px;">
+                    <h4>联系客服</h4>
+                    <dl>
+                        <dd><a>在线客服</a></dd>
+                        <dd><a>客服电话：XXXXXXX</a></dd>
+                        <dd><a>服务时间：XX：XX-XX：XX</a></dd>
+                        <dd><a>反馈邮箱：XXXXXXX</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <hr>
+            <div style="width: 1180px;text-align: center;">
+                <p>Copyright&nbsp;&copy;&nbsp;2018&nbsp;ZHBIT&nbsp;版权所有</p>
+            </div>
+
+
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="~/js/javaScript.js" type="text/javascript"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>

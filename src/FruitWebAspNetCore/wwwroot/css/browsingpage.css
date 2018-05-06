@@ -1,0 +1,73 @@
+/* CSS Document */
+.page-size {
+	width: 1180px;
+	margin: auto;
+}
+
+.carousel{
+	height:350px;
+	background-color:#000;
+	margin-bottom:30px;
+	}
+.carousel .item{
+	height:350px;
+	background-color:#000;
+	}
+.carousel img{
+	width:100%;
+	background-color:#000;
+	}
+.carousel-caption p{
+	margin-bottom:20px;
+	font-size:16px;
+	line-height:28px;
+	}
+.glyphicon{
+	font-size:1.2em;
+	color:#f2f0f1;
+	}
+
+
+.watchword div div{
+	width: 236px;
+	height: 100px;
+	float: left;
+	text-align: center;
+}
+.waistchword {
+	width: 1180px;
+	height: 100px;
+	border: 1px red solid;
+	position: relative;
+/*	display: block;*/
+}
+
+.watchword {
+	
+}
+.btn-defind {
+	border-radius: 0px 4px 4px 0px;
+	width: 100px;
+	height: 34px;
+}
+
+.text-defind {
+	border-radius: 4px 0px 0px 4px;
+	width: 350px;
+	float: left;
+}
+
+.head-div-position {
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
